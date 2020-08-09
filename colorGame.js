@@ -9,6 +9,10 @@ var messageDisplay = document.getElementById("messageDisplay");
 var modeButtons = document.querySelectorAll(".mode");
 var resetButton = document.getElementById("reset");
 
+resetButton.addEventListener("click", function() {
+    reset();
+})
+
 init();
 
 function init() {
@@ -78,9 +82,7 @@ function reset() {
     h1.style.backgroundColor = "steelblue"
 }
 
-resetButton.addEventListener("click", function() {
-    reset();
-})
+
 
 function changeColors(color) {
     for (var i = 0; i < squares.length; i++) {
